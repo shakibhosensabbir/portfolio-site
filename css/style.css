@@ -317,14 +317,17 @@ h1.work-title {
 }
 
 @media only screen and (max-width: 980px) {
+    .work-box {
+        margin-bottom: 25px;
+    }
     .icon::before {
         position: absolute;
         content: "";
         left: auto;
         top: auto;
         width: 4px;
-        height: calc(100% - 476px);
-        background-color: rgb(46, 204, 113);
+        height: calc(100% - 500px);
+        background-color: rgb(46 204 113);
         margin-top: 35px;
         margin-left: 5px;
     }
@@ -390,6 +393,33 @@ h1.work-title {
         height: calc(100% - 455px);
         background-color: rgb(46, 204, 113);
         margin-top: 31px;
+        margin-left: 5px;
+    }
+
+    .icon::after {
+        content: "";
+        background: rgb(46, 204, 113);
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        border-radius: 50%;
+        margin-top: 4px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .work-box {
+        margin-bottom: 25px;
+    }
+
+    .icon::before {
+        position: absolute;
+        content: "";
+        left: auto;
+        top: auto;
+        width: 4px;
+        height: calc(100% - 495px);
+        background-color: #2ecc71;
+        margin-top: 25px;
         margin-left: 5px;
     }
 
